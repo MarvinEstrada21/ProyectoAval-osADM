@@ -3,6 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { plotData } from "./data";
 import React, { useState } from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
 function plot() {
   const navigate = useNavigate();
@@ -10,13 +15,19 @@ function plot() {
   const data = plotData[idplot];
   const [selectedImage, setSelectedImage] = useState(null);
   const [photoIndex, setPhotoIndex] = useState(0);
+  const customIcon = new L.Icon({
+    iconUrl: markerIcon,
+    shadowUrl: markerShadow,
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+  });
 
   if (!data) {
     return <p>No se encontró información para este lote o área</p>;
   }
 
   return (
-    <div>
+    <div style={{width: "95vw"}}>
       <header>
         <h1>{data.title}</h1>
         <p>{data.description}</p>
@@ -95,6 +106,20 @@ function plot() {
           ))}
         </div>
       )}
+
+      <div style={{paddingTop: "1rem", paddingBottom: "1rem", width: "100%"}}>
+        <MapContainer
+          center={data.coordinates}
+          zoom={13}
+          style={{ height: "400px", width: "100%" }}
+        >
+          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+          <Marker position={data.coordinates} icon={customIcon}>
+            <Popup>{data.title}</Popup>
+          </Marker>
+        </MapContainer>
+      </div>
+
       <p>
         <button
           onClick={() => {

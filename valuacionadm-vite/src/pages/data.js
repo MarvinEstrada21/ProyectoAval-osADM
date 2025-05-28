@@ -93,6 +93,7 @@ export const plotData = {
       valorTributario: "NA",
       deudaTributaria: "NA",
     },
+    coordinates: [14.080383, -87.197237],
   },
   lote1: {
     title: "Lote 1",
@@ -108,6 +109,7 @@ export const plotData = {
       valorTributario: "L. 8,459.94",
       deudaTributaria: "L. 8,459.94",
     },
+    coordinates: [14.079746, -87.197584],
   },
   lote2: {
     title: "Lote 2",
@@ -122,6 +124,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.079673, -87.197661],
   },
   lote3: {
     title: "Lote 3",
@@ -136,6 +139,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.079551, -87.197704],
   },
   lote4: {
     title: "Lote 4",
@@ -150,6 +154,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.079468, -87.197773],
   },
   lote5: {
     title: "Lote 5",
@@ -164,6 +169,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.07939724131125, -87.19787418951412],
   },
   lote6: {
     title: "Lote 6",
@@ -178,6 +184,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.079301, -87.197937],
   },
   lote7: {
     title: "Lote 7A",
@@ -192,6 +199,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.079250899336849, -87.19804853310092],
   },
   lote7b: {
     title: "Lote 7B",
@@ -206,6 +214,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.0792144764298, -87.19809346010337],
   },
   lote8: {
     title: "Lote 8A",
@@ -220,6 +229,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.079186508838003, -87.1981531392516],
   },
   lote8b: {
     title: "Lote 8B",
@@ -234,6 +244,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.079148134694828, -87.198201419012],
   },
   lote9: {
     title: "Lote 9",
@@ -248,6 +259,7 @@ export const plotData = {
       valorTributario: "L. 3,311.11",
       deudaTributaria: "L. 3,311.11",
     },
+    coordinates: [14.079065, -87.198265],
   },
   lote10: {
     title: "Lote 10",
@@ -262,6 +274,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.078980, -87.198388],
   },
   lote11: {
     title: "Lote 11",
@@ -276,6 +289,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.078902, -87.198489],
   },
   lote12: {
     title: "Lote 12",
@@ -290,6 +304,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.078876, -87.198638],
   },
   lote13: {
     title: "Lote 13",
@@ -304,6 +319,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.078788, -87.198714],
   },
   lote14: {
     title: "Lote 14",
@@ -318,6 +334,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.078693, -87.198793],
   },
   lote15: {
     title: "Lote 15",
@@ -333,6 +350,7 @@ export const plotData = {
       valorTributario: "L. 5,857.65",
       deudaTributaria: "L. 5,857.65",
     },
+    coordinates: [14.078578, -87.198891],
   },
   lote16: {
     title: "Lote 16",
@@ -347,6 +365,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.078453, -87.199040],
   },
   lote17: {
     title: "Lote 17",
@@ -361,6 +380,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.078996, -87.198620],
   },
   lote18: {
     title: "Lote 18",
@@ -375,6 +395,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.079053, -87.198578],
   },
   lote19: {
     title: "Lote 19",
@@ -389,6 +410,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.079106, -87.198524],
   },
   lote20: {
     title: "Lote 20",
@@ -403,6 +425,7 @@ export const plotData = {
       valorTributario: "L. 2,912.03",
       deudaTributaria: "L. 2,912.03",
     },
+    coordinates: [14.079194, -87.198451],
   },
   lote21: {
     title: "Lote 21",
@@ -417,6 +440,7 @@ export const plotData = {
       valorTributario: "L. 2,941.85",
       deudaTributaria: "L. 2,941.85",
     },
+    coordinates: [14.079293, -87.198372],
   },
   lote22: {
     title: "Lote 22",
@@ -431,6 +455,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.079350, -87.198279],
   },
   lote23: {
     title: "Lote 23",
@@ -455,6 +480,7 @@ export const plotData = {
       valorTributario: "L. 57,263.17",
       deudaTributaria: "L. 57,263.17",
     },
+    coordinates: [14.079545, -87.198223],
   },
   lote24: {
     title: "Lote 24",
@@ -469,6 +495,7 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.079602, -87.198104],
     
   },
   lote25: {
@@ -485,6 +512,7 @@ export const plotData = {
       valorTributario: "L. 9,045.41",
       deudaTributaria: "L. 9,045.41",
     },
+    coordinates: [14.079666951894183, -87.19803045626277],
   },
   lote26: {
     title: "Lote 26",
@@ -500,6 +528,7 @@ export const plotData = {
       valorTributario: "L. 8,994.05",
       deudaTributaria: "L. 8,994.05",
     },
+    coordinates: [14.079739797554353, -87.19794060226428],
   },
   lote27: {
     title: "Lote 27",
@@ -514,6 +543,7 @@ export const plotData = {
       valorTributario: "L. 3,556.73",
       deudaTributaria: "L. 3,556.73",
     },
+    coordinates: [14.079821748896949, -87.19786415930685],
   },
   lote28: {
     title: "Lote 28",
@@ -528,5 +558,6 @@ export const plotData = {
       valorTributario: "L. 5,634.85",
       deudaTributaria: "L. 5,634.85",
     },
+    coordinates: [14.079925163641102, -87.19778369303955],
   },
 };
