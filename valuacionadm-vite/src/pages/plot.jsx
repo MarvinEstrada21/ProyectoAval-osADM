@@ -38,11 +38,11 @@ function plot() {
               <td>{data.infoTable?.avaluo}</td>
             </tr>
             <tr>
-              <th>Base Imponible</th>
+              <th>Base Imponible (30%)</th>
               <td>{data.infoTable?.baseImponible}</td>
             </tr>
             <tr>
-              <th>Cuota Tributaria</th>
+              <th>Cuota Tributaria 3.5/millar (2025)</th>
               <td>{data.infoTable?.cuotaTributaria}</td>
             </tr>
             <tr>
