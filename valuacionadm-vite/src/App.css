@@ -1,0 +1,692 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/*Image Gallery*/
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width: 200px; /* ajusta según necesites */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+
+
+
+/*Modal for opening pictures*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 40px 0; /* Espacio arriba y abajo */
+  box-sizing: border-box;
+}
+
+.modal-content {
+  max-width: 90vw;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+
+
+/*Nav buttons for pictures in gallery*/
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+  user-select: none;
+}
+
+.nav-button.left {
+  left: 10%;
+}
+
+.nav-button.right {
+  right: 10%;
+}
+
+.nav-button:hover {
+  color: #ccc;
+}
+
+
+
+
+/*Plano General*/
+.App-plano {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*Allotment Buttons*/
+/*Home Button*/
+.Home-button {
+  background-color: dodgerblue;
+  border: none;
+  font-size: 18px;
+  color: black;
+  left: 50%;
+  cursor: pointer;
+  text-align: center;
+}
+
+/*Park Button*/
+.Park-button {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 105%;
+  left: 65%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*Allotment Button 1*/
+.Allotment-button1 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 145.4%;
+  left: 55%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 2*/
+.Allotment-button2 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 151%;
+  left: 53%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 3*/
+.Allotment-button3 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 157%;
+  left: 51%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 4*/
+.Allotment-button4 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 162.8%;
+  left: 49%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 5*/
+.Allotment-button5 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 168%;
+  left: 46.8%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 6*/
+.Allotment-button6 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 173%;
+  left: 44%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 7*/
+.Allotment-button7 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 179.5%;
+  left: 56%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*Allotment Button 7b*/
+.Allotment-button7b {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 182.2%;
+  left: 53.5%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*Allotment Button 8*/
+.Allotment-button8 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 185.1%;
+  left: 52%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*Allotment Button 8b*/
+.Allotment-button8b {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 188%;
+  left: 51%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*Allotment Button 9*/
+.Allotment-button9 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 190%;
+  left: 35.2%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 10*/
+.Allotment-button10 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 196%;
+  left: 32%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 11*/
+.Allotment-button11 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 201%;
+  left: 29%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 12*/
+.Allotment-button12 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 203.8%;
+  left: 25%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 13*/
+.Allotment-button13 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 208.8%;
+  left: 22.8%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 14*/
+.Allotment-button14 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 214%;
+  left: 20.3%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 15*/
+.Allotment-button15 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 220.5%;
+  left: 17.4%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 16*/
+.Allotment-button16 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 230%;
+  left: 13.5%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 17*/
+.Allotment-button17 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 195%;
+  left: 25.1%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 18*/
+.Allotment-button18 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 190.1%;
+  left: 13%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*Allotment Button 19*/
+.Allotment-button19 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 188%;
+  left: 28%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 20*/
+.Allotment-button20 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 182.5%;
+  left: 30.5%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 21*/
+.Allotment-button21 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 177%;
+  left: 32.8%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 22*/
+.Allotment-button22 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 172%;
+  left: 35%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 23*/
+.Allotment-button23 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 165%;
+  left: 38.6%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 24*/
+.Allotment-button24 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 157.5%;
+  left: 41%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 25*/
+.Allotment-button25 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 152.5%;
+  left: 43.3%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 26*/
+.Allotment-button26 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 146.7%;
+  left: 45.5%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 27*/
+.Allotment-button27 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 141.9%;
+  left: 47.6%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+/*Allotment Button 28*/
+.Allotment-button28 {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: 135%;
+  left: 49.8%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+  padding: 16px 18px
+}
+
+.square {
+  background-color: white;
+  border: none;
+  position: absolute;
+  top: 136%;
+  left: 50%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(39deg);
+}
+
+
+
+/*Arrow Overlay*/
+.arrow {
+  position: absolute;
+  width: 150px; /* longitud de la línea */
+  height: 2px;
+  background-color: black;
+}
+
+.arrow::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -4px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid black;
+}
+
+/* Ajusta la posición y rotación de cada flecha según el lote */
+.arrow7 {
+  top: 181%; /* posición aproximada desde el top del contenedor */
+  left: 46%;
+  transform: rotate(0); /* según la dirección hacia el botón */
+}
+
+.arrow7b {
+  top: 184%;
+  left: 43.5%;
+  transform: rotate(0);
+}
+
+.arrow8 {
+  top: 186.5%;
+  left: 42%;
+  transform: rotate(0);
+}
+
+.arrow8b {
+  top: 189.4%;
+  left: 41%;
+  transform: rotate(0);
+}
+
+.arrow18 {
+  top: 192%;
+  left: 17%;
+  transform: rotate(180deg);
+}
+
+
+
+
+/*PDFs*/
+.pdf-viewer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.pdf-viewer iframe {
+  width: 90vw;
+  height: 1000px;
+  border: none;
+  margin-top: 1rem;
+}
+
+
+
+
+/*Tables*/
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.table-info {
+  width: 700px;           /* Ancho total fijo */
+  table-layout: fixed;    /* ← clave para control de columnas */
+  border-collapse: collapse;
+  background-color: #222;
+  color: white;
+  border: 1px solid #444;
+}
+
+.table-info th,
+.table-info td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #444;
+  vertical-align: top;
+}
+
+.table-info th {
+  width: 50%;              /* Columna izquierda más ancha */
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.table-info td {
+  width: 50%;              /* Columna derecha más estrecha */
+  word-wrap: break-word;
+}
