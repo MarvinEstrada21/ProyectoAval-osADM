@@ -6,8 +6,8 @@ function init() {
   const navigate = useNavigate();
 
   return (
-    <div>
-      <img src={plano} className="App-plano" alt="plano"></img>
+    <div className="App-plano">
+      <img src={plano} className="App-plano-img" alt="plano"></img>
       <button
         onClick={() => {
           navigate(`/plot/areaverde`);
