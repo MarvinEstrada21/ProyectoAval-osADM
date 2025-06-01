@@ -67,6 +67,8 @@ export const plotData = {
   areaverde: {
     title: "Área Verde",
     description: "",
+    fichaCatastral: "/docs/fichaAreaVerde.pdf",
+    planoLote: "/docs/planoAreaVerde.pdf",
     avaluo: "/docs/LOTE A.pdf",
     images: [
       areaverde1,
@@ -98,6 +100,8 @@ export const plotData = {
   lote1: {
     title: "Lote 1",
     description: "",
+    fichaCatastral: "/docs/fichaLote1.pdf",
+    planoLote: "/docs/planoLote1.pdf",
     avaluo: "/docs/LOTE 1.pdf",
     images: [lote1pic1, lote1pic2],
     infoTable: {
@@ -339,6 +343,8 @@ export const plotData = {
   lote15: {
     title: "Lote 15",
     description: "",
+    fichaCatastral: "/docs/fichaLote15.pdf",
+    planoLote: "/docs/planoLote15.pdf",
     avaluo: "/docs/LOTE 15.pdf",
     images: [lote15pic1, lote15pic2],
     infoTable: {
@@ -460,6 +466,8 @@ export const plotData = {
   lote23: {
     title: "Lote 23",
     description: "",
+    fichaCatastral: "/docs/fichaLote23.pdf",
+    planoLote: "/docs/planoLote23.pdf",
     avaluo: [
       "/docs/LOTE 23 C01.pdf",
       "/docs/LOTE 23 C02.pdf",
@@ -501,6 +509,8 @@ export const plotData = {
   lote25: {
     title: "Lote 25",
     description: "",
+    fichaCatastral: "/docs/fichaLote25.pdf",
+    planoLote: "/docs/planoLote25.pdf",
     avaluo: "/docs/LOTE 25.pdf",
     images: [lote25pic1, lote25pic2],
     infoTable: {
@@ -517,6 +527,8 @@ export const plotData = {
   lote26: {
     title: "Lote 26",
     description: "",
+    fichaCatastral: "/docs/fichaLote26.pdf",
+    planoLote: "/docs/planoLote26.pdf",
     avaluo: "/docs/LOTE 26.pdf",
     images: [lote26pic1, lote26pic2],
     infoTable: {

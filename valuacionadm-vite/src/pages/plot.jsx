@@ -27,12 +27,13 @@ function plot() {
   }
 
   return (
-    <div style={{width: "95vw"}}>
+    <div style={{ width: "95vw" }}>
       <header>
         <h1>{data.title}</h1>
         <p>{data.description}</p>
       </header>
 
+      <h3 style={{ paddingTop: "2rem" }}>Información General</h3>
       <div className="table-container">
         <table className="table-info">
           <tbody>
@@ -68,6 +69,59 @@ function plot() {
         </table>
       </div>
 
+      {data.fichaCatastral && (
+        <h3 style={{ paddingTop: "5rem" }}>Ficha Catastral del Lote</h3>
+      )}
+      {Array.isArray(data.fichaCatastral)
+        ? data.fichaCatastral.map((pdfSrc, index) => (
+            <div className="pdf-viewer" key={index}>
+              <iframe
+                src={`${pdfSrc}#zoom=150`}
+                title={`Documento ${index + 1} del ${idplot}`}
+                width="100%"
+                height="1000px"
+              />
+            </div>
+          ))
+        : data.fichaCatastral && (
+            <div className="pdf-viewer">
+              <iframe
+                src={`${data.fichaCatastral}#zoom=150`}
+                title={`Documento del ${idplot}`}
+                width="100%"
+                height="1000px"
+              />
+            </div>
+          )}
+
+      {data.planoLote && (
+        <h3 style={{ paddingTop: "5rem" }}>Plano del Lote</h3>
+      )}
+      {Array.isArray(data.planoLote)
+        ? data.planoLote.map((pdfSrc, index) => (
+            <div className="pdf-viewer2" key={index}>
+              <iframe
+                src={`${pdfSrc}#zoom=125`}
+                title={`Documento ${index + 1} del ${idplot}`}
+                width="100%"
+                height="850px"
+              />
+            </div>
+          ))
+        : data.planoLote && (
+            <div className="pdf-viewer2">
+              <iframe
+                src={`${data.planoLote}#zoom=125`}
+                title={`Documento del ${idplot}`}
+                width="100%"
+                height="850px"
+              />
+            </div>
+          )}
+
+      {data.avaluo && (
+        <h3 style={{ paddingTop: "5rem" }}>Documentos de Avalúo del Lote</h3>
+      )}
       {Array.isArray(data.avaluo)
         ? data.avaluo.map((pdfSrc, index) => (
             <div className="pdf-viewer" key={index}>
@@ -90,6 +144,7 @@ function plot() {
             </div>
           )}
 
+      <h3 style={{ paddingTop: "5rem" }}>Imágenes del Lote</h3>
       {data.images && data.images.length > 0 && (
         <div className="image-gallery">
           {data.images.map((imgSrc, index) => (
@@ -107,13 +162,16 @@ function plot() {
         </div>
       )}
 
-      <div style={{paddingTop: "1rem", paddingBottom: "1rem", width: "100%"}}>
+      <h3 style={{ paddingTop: "5rem" }}>Geolocalización del Lote</h3>
+      <div style={{ paddingTop: "1rem", paddingBottom: "1rem", width: "100%" }}>
         <MapContainer
           center={data.coordinates}
           zoom={13}
           style={{ height: "400px", width: "100%" }}
         >
-          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+          <TileLayer
+            url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+          />
           <Marker position={data.coordinates} icon={customIcon}>
             <Popup>{data.title}</Popup>
           </Marker>

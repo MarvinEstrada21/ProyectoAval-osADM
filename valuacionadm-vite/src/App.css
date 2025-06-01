@@ -652,6 +652,21 @@
   margin-top: 1rem;
 }
 
+.pdf-viewer2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.pdf-viewer2 iframe {
+  width: 90vw;
+  height: 850px;
+  border: none;
+  margin-top: 1rem;
+}
+
 
 
 
