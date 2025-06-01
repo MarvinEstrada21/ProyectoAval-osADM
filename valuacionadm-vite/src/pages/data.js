@@ -469,6 +469,7 @@ export const plotData = {
     fichaCatastral: "/docs/fichaLote23.pdf",
     planoLote: "/docs/planoLote23.pdf",
     avaluo: [
+      "/docs/LOTE 23.pdf",
       "/docs/LOTE 23 C01.pdf",
       "/docs/LOTE 23 C02.pdf",
       "/docs/LOTE 23 C03.pdf",
